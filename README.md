@@ -14,7 +14,7 @@ a better understanding of the problems you encountered during the developmemnt o
 
 ## Project Team
 - Vincent Terrone - Vicom Infinity- Mentor
-- Ayush Jain - *University* - Mentee
+- Ayush Jain - People's Education Society (PES) University - Mentee
 
 ## Deliverables:
 - [ ] Project Plan
