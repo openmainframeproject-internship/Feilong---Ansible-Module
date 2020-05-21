@@ -1,13 +1,12 @@
 # Status Reports Folder
 Weekly/bi-weekly status reports go into this folder
 
-Project Plan Template: https://github.com/openmainframeproject-internship/resources/blob/master/forms/project_plan.md
 
 Status Report Template: https://github.com/openmainframeproject-internship/resources/blob/master/forms/Weekly%20Project%20Status.docx
 
 | Document | Description | Document Name |
 |---|---|---|
-| Project Plan | Overall week by week plan of milestones | |
+| Project Plan | Overall week by week plan of milestones |[Project Plan](https://github.com/openmainframeproject-internship/Feilong---Ansible-Module/blob/master/Status%20Reports/Project_Plan.pdf) |
 | Week 1 Status Report | | | 
 | Week 2 Status Report | | |
 | Week 3 Status Report | | |
