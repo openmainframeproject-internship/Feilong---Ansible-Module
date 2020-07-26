@@ -1,0 +1,18 @@
+01 st May 2020
+
+We discussed in brief how to go about the project documentation over OMP github
+and meetings along with a development environment setup/access.
+
+
+Tasks Assigned 
+
+1.) Work on the high level project plan.	[]
+
+2.) Make the github repository of the project.	[]
+
+3.) Zowe access credentials to the server-Mon(Vincent) []
+   and explore more
+
+4.) My machine of s390x architecture with sudo next week - Vincent []
+
+5.) Read up the FS8K/DS8K doc and ansible install on machine. 

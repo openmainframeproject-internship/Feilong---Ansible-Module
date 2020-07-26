@@ -1,0 +1,13 @@
+26th Jun'20
+
+So I ran over the demo of allocating storage for Vincent and discussed issues
+of the Rest call to FS8K. 
+
+Tasks :-
+
+1. Investigate upon the usage of the Ansible adhoc commands over DS8K/FS8K CLI.
+2. Work on the REST API(parameters) issue of Mapping the Volume to host and 
+give status feed
+3. Investigation on how we are gonna mostly get in inputs for our module.
+	- Playbook
+	- Rest call or something else

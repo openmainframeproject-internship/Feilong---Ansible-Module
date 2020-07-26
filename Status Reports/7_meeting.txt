@@ -1,0 +1,16 @@
+
+20th May - Meeting
+
+Mostly discussion on the project plan.
+
+Checkpoint discuss of last meeting(These were the issues we were looking into) 
+*Networking Issues(FS8K and Ansible on s390x). []
+*ID alloted to me for FS8K were READ only for me.
+
+And some discussion on the storage for mainframe (fibre vs mini 
+disks-Mod54-26GB which is used )
+
+Tasks
+
+1. Wrap the REST call for token into ansible.
+2. Try to pass those {user,password} parameter into ansible module.

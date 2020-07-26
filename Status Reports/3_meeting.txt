@@ -1,0 +1,48 @@
+ 24th April 2020
+
+
+Tasks Assigned or Discussions
+
+1.)
+Build/ Install on Ansible on the Actual UBuntu running on mainframe and Play.
+
+2.)Look into the Postman Request/ Response and Documentation
+
+3.)Send him the playbooks which i have created
+
+4.)Do apply for THINK2020 and Redhat Summit Virtual(Ansible)
+
+5.)We discussed on the question why ansible 
+
+	Openstack
+	   |
+	   |Feilong
+ 	   |
+	  ZVM
+           |
+	   | Ansible / Python scripts but  asked to use ansible
+	   |		
+	DS8K/FS8K
+
+6.) And some discussion on what is Feilong and how it is equivalently used with 
+    CLoud.init
+
+
+7.) We discussed about the FS8K(fc-RUN OVER REMOTE/SWITCHES)-block address,WWPN
+			   DS8K(disk based -unit address)
+
+ Once he has explained the following block over voice
+
+	Openstack-->Feilong--->Linux ON zvm--->Ansible--> s390x
+
+
+8.) And we could look into ssh keys and security later on in the implementation 
+    as Vincent Suggested.
+
+
+And how these are differently handled  over linux,zvm,Windows
+Some of the unknown keywords
+Cinder in OpenStack,Cloud.init,WWPN(World Wide Port Number)
+
+What should be done of documentation?
+

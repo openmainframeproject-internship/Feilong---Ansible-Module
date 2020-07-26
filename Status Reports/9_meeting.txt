@@ -1,0 +1,9 @@
+12th June-2020
+
+Discussed about the issues of jumpbox,unique identifier to identify the volumes.
+
+Tasks 
+1. Document commands/ responses and send to storage tech team.
+2. Investigate more on the ansible token management module and get it working
+3. Readup more on docs for the parameter to be used as unique identifier.
+

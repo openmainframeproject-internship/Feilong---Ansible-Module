@@ -1,0 +1,14 @@
+19th Jun 2020
+
+We had a call with the Storage expert Tom handling FS/DS8K stuff and cleared a few of the doubts relating to project.Relating to WWPN, host creation and UID mostly.
+
+Some of the Key Points to further investigate:-
+1. What if commands are executed 2 or more times
+2. And what if volume names are issued same and each time how to create a new volume and attach it
+Tasks:- 
+
+1. Issuing the storage commands to
+	- Set the host
+	- Create a volume and host map it
+	- Investigate to get UID via manual commands rather than regex
+

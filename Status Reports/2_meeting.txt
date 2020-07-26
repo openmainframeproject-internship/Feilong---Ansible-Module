@@ -1,0 +1,24 @@
+15th April 2020
+
+We discussed on mainframe of Vicom infinity what's it is - 4 physical IFL'S in 
+machine on which particularly 2 threads can run on a core so it's like  
+8 processors. I guess and some IBM mainframe model discussion along with 
+cooling.
+
+
+Suggestion/WorkAround:- If u can't find a package or anything look into the 
+			(java --> JVM) or (Node gems) which has it's own 
+			compiler and is independent.
+			[ Compile libraries for s390x]
+
+Tasks
+
+1.)  Tryout Ansible on 	suse 
+			Redhat
+			Ubuntu
+
+2.) Build an ansible module to call REST API's -eg yahoo stocks API or something related to mounting the file system.
+	Try to use of the Postman for the JSON request formating
+
+
+

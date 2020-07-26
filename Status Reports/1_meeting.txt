@@ -1,0 +1,22 @@
+08th April 2020
+
+First meet and general discussions on project related stuff and background work and interests.
+
+These were some of the questions which were raised and somewhat needed to be answered
+1.)	What is ansible?
+
+2.)	Discover more about linux on Zvm/LinuxONE?
+
+3.)	See more into the CPU dump/PCI dump/networking stack?
+
+4.) 	What are LPARs?
+
+5.)	What is OpenStack and what's the use of Ansible modules?
+
+6.)	What does the Storage will return UCB array address back and then attach it into the system?
+
+7.)	What are the video adapters connected,internal hardware and CPU ?
+
+8.)	What are IFL processor and explore more?
+
+

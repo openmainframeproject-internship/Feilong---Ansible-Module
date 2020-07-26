@@ -1,0 +1,43 @@
+13th May 2020
+
+We discussed on a bit on the project plan which will basically involve 2 phases 
+
+								----|
+1.)Communicate to Storage ask for storage it will return	    |
+(which will not involve just asking for the storage)		    |
+								    |
+2.We need to go through manual and ask 				    |
+	 							    |  Phase-1
+								    |  (2 week + 1)
+:-	return [WWPN]						----|
+
+
+								----|
+2.)	Integration of the module with Feilong			    |  Phase-2
+								    |
+								----|
+
+The FS9K isn't connected to the machine physically via cables that's due right 
+now but will not hinder us right now.
+
+So mentor told the request is flow is like
+
+	OpenStack 
+	 ^ |
+	 | |  (Ask for 2gb of storage)
+	 | |
+      Ansible Module	
+	^   |	
+(WWPN)	|   |	
+	|   |
+     DS8K/FS9K storage
+	
+Tasks
+
+[] - Sample/Request working on FS9K via Zowe/VPN.
+
+[] - How can we pass into parameter/input in Ansible module.
+
+[] - Publish/send the project plan.
+
+[] - Install ansible on the machine given to me.					
