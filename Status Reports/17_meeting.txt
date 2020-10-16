@@ -1,0 +1,19 @@
+				Feilong-Ansible Project                
+Date :- 05th August 2020
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+
+2.) General Points:-
+		
+
+3.) Accomplishments for the Week:-
+	- Setup the server using flask for REST call	
+
+4.) List of Issues faced, concerns or problems:
+	-
+
+5.) Tasks for the Upcoming Week :-
+	- Continue the integration of the script into flask - Ayush
+	- Usage of ansible-vault for password - Ayush

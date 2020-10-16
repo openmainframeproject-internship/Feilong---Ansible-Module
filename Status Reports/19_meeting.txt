@@ -1,0 +1,19 @@
+				Feilong-Ansible Project                
+Date :- 19th Aug, 2020
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+
+2.) General Points:-
+	
+
+3.) Accomplishments for the Week:-
+	- Implemented error/exceptional handling
+
+4.) List of Issues faced, concerns or problems:-
+ 	- Usage of ansible vault
+
+5.) Tasks for the Upcoming Week :-
+	- Work on doc for testing - Ayush
+	- Ansible module using REST call(low priority) - Ayush

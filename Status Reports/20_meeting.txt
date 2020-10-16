@@ -1,0 +1,22 @@
+				Feilong-Ansible Project                
+Date :- 28'Aug 2020
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+
+2.) General Points:-
+	Talking about the inputs and outputs of the REST  and integration with Feilong
+
+3.) Accomplishments for the Week:-
+	-Created in animated video for Feilong-Ansible project  - Vincent
+
+4.) List of Issues faced, concerns or problems:-
+ 	- Work on issues with Haproxy/nginx issues
+					
+
+5.) Tasks for the Upcoming Week :-
+	- Finish up with error handling for the leftout part 
+	- Ansible vault implementation (low priority)
+
+	

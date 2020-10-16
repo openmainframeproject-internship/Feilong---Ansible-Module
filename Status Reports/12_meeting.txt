@@ -1,0 +1,23 @@
+1st July'20
+
+This was a meeting  Johan & Nick of the Feilong Project and mainly talked on 
+the Integration of the ansible modules with Feilong.
+
+Discussed on the params also:-
+
+Input Params	--------->	Output Params
+ 
+Amt of Storage,			WWPN,
+Host ID(Not clear) 		SCSI LUN id
+
+Tasks -
+
+1.) Investigate on How to Call into ansible modules/playbook
+	- Naturally
+	- built something like Nodejs/Flask Rest API server and then call
+
+2.) Continue Investigation on the CLI usage via Ansible ADHOC and params 
+    passing into ansible.
+
+
+

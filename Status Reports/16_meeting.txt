@@ -1,0 +1,20 @@
+				Feilong-Ansible Project                
+Date :- 29 July'20
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+
+2.) General Points:-
+	-> A Further feature enhancement on project.
+	-> Whether (IP)input storage should be parameterised - Future
+	   Right now hardcoded.
+
+3.) Accomplishments for the Week:-
+	-> Weaved playbook in Python script - Ayush
+	-> Test the response to PMR(Works correctly with few alterations) - Ayush
+4.) List of Issues faced, concerns or problems:-
+ 	-> Usage of vault for passwords inside script
+
+5.) Tasks for the Upcoming Week :-
+	-> Setup server and integrate Script to listen to request

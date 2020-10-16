@@ -1,0 +1,24 @@
+				Feilong-Ansible Project                
+Date :- 23 Sept 2020
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+	-> Nick
+	-> Johan Schelling
+
+2.) General Points:-
+	Talking about the inputs and outputs of the REST  and integration with Feilong
+
+3.) Accomplishments for the Week:-
+	- Finished Bare metal deployment using uwsgi,nginx of Feilong-Ansible as a systemd service - Ayush
+	- Setup of channels on mainframe storage - Tom
+
+4.) List of Issues faced, concerns or problems:-
+ 	- Work on ansible vault usage
+					
+
+5.) Tasks for the Upcoming Week :-
+	- Implement the 2nd way to interact with storage via REST call
+	- Prepare a testing Document
+	

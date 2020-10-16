@@ -1,0 +1,19 @@
+				Feilong-Ansible Project                
+Date :- 7 Oct 2020
+
+1.) Meeting Members:
+	-> Ayush Jain
+	-> Vincent Terrone
+
+2.) General Points:-
+	Mentorship end just final windup
+
+3.) Accomplishments for the Week:-
+	- Implement Ansible Vault and created doc - Ayush
+	- Video Recording - Vincent & Ayush
+4.) List of Issues faced, concerns or problems:-
+					
+
+5.) Tasks for the Upcoming Week :-
+	- Final Docs
+	
