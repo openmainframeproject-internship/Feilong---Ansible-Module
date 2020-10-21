@@ -12,20 +12,19 @@ alternative packages.
 
 ##  Installing the components 
 	
-	```    
 	$ sudo apt update
     	$ sudo apt install python3-pip python3-dev build-essential libssl-dev
 	$ sudo apt install python3-venv nginx sshpass libffi-dev python3-setuptools ansible
-	```
+
 
 ## Creating the Project dir.
 	
 We need to create the project directory where all ansible related configs and 
 directories reside.
-	```
+
 	$ mkdir ~/project_dir
 	$ cd ~/project_dir
-	```
+
 
 ## Creation of Virtual Environment and required pip packages
 
@@ -35,26 +34,26 @@ and install the python packages
 	uwsgi - (Web Server Gateway Interface) - Serving Python application on Nginx web server. 
 	flask - Python Web based lightframework
 	
-	```
+	
 	$ python3.6 -m venv myprojectenv
 	$ source myprojectenv/bin/activate 
 	$ pip install wheel uwsgi flask ansible-runner
-	```
-	and if you want to use ssh instead of REST call
-	```
+	
+and if you want to use ssh instead of REST call
+	
 	$ pip install paramiko
-	```	
+		
 ## Creation of appropriate directory structure
 
 So as our application uses ansible-runner module to execute ansible playbook
 we need to place the playbooks,inventory,vars in a specific format described
 
-	```
+	
 	$ cd ~/myproject
-	```  
+  
 	and then create a directory structure like this which ansible runner could understand 
 	and execute correctly to give response.
-	```
+	
 	.
 	├── env
 	│   ├── envvars
@@ -78,7 +77,7 @@ we need to place the playbooks,inventory,vars in a specific format described
             		├── tasks
             		├── tests
             		└── vars
-	```
+	
 ## Updating files or folders
 
 As we need to communicate to IBM FS8K particularly.If we need to communicate to
@@ -94,9 +93,9 @@ We will create a single file as our application is not complex.That will
 basically execute ansible playbook using ansible runner and then parse the 
 ansible output for the required parameters and pass them as response.
 
-	```
+	
 	(myprojectenv)$ vi feilong_ansible.py
-	```
+	
 
 The application code will live in this file and can be taken from github repo 
 and you can run and check or update the code accroding to playbook names etc.
@@ -105,32 +104,32 @@ and you can run and check or update the code accroding to playbook names etc.
 
 ## Creating a wsgi file 
 
-	```
+	
 	$ cd ~/myproject.ini
 	$ vi wsgi.py
-	```
+	
 
 	+. Inside the wsgi.py add the following code and modify accordingly
 
-	```
+	
 	from myprojectenv.feilong_ansible import app
 
 	if __name__ == "__main__":
     		app.run()
 
-	```
+	
 
 ### Configuring uWSGI using configuration file
 
 This is a file for long-term deployment and usage purpose.
 
-	```
+	
 	$ cd ~/project_dir
 	$ vi myproject.ini
-	```
-	+. Inside the myproject.ini add 
 	
-	```
++. Inside the myproject.ini add 
+	
+	
 	[uwsgi]
 	module = wsgi:app
 
@@ -142,7 +141,7 @@ This is a file for long-term deployment and usage purpose.
 	vacuum = true
 
 	die-on-term = true
-	```
+	
 
 
 ## Creating a systemd Unit file
@@ -150,12 +149,12 @@ This is a file for long-term deployment and usage purpose.
 This may allow the init system in ubuntu to automatically start when server boots 
 and this may vary for other distros.
 
-	```
+	
 	$ sudo vi /etc/systemd/system/myproject.service
-	```
-	and put the configs accordingly.
 
-	```
+and put the configs accordingly.
+
+	
 	[Unit]
 	Description=uWSGI instance to serve myproject
 	After=network.target
@@ -169,25 +168,25 @@ and this may vary for other distros.
 
 	[Install]
 	WantedBy=multi-user.target
-	```
 	
-	Start the service 
-	```
+	
+Start the service 
+	
 	$ sudo systemctl start myproject
 	$ sudo systemctl enable myproject	
-	```
+	
 	
 ## Configuring Nginx to Proxy Requests
 	
 Now configure Nginx to pass web requests to that socket using the uwsgi protocol.
 
 
-	```
+	
 	$ sudo vi /etc/nginx/sites-available/myproject
-	```
-	And 
+	
+And 
 
-	```
+	
 	server {
     	listen 80;
     	server_name your_domain www.your_domain;
@@ -198,24 +197,24 @@ Now configure Nginx to pass web requests to that socket using the uwsgi protocol
     	}
 	}
 
-	```
+	
 To enable the Nginx server block configuration we need to link the file
 
-	```
+	
 	$ sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
-	```
+	
 We need to restart the Nginx and allow firewall access to Nginx
 
-	```
+	
 	$ sudo systemctl restart nginx
 	$ sudo ufw allow 'Nginx Full'
-	```
+	
 ## Encounter error- Check the following
 
-1. sudo less /var/log/nginx/error.log: checks the Nginx error logs.
-2. sudo less /var/log/nginx/access.log: checks the Nginx access logs.
-3. sudo journalctl -u nginx: checks the Nginx process logs.
-4. sudo journalctl -u myproject: checks your Flask app’s uWSGI logs.
+1. `sudo less /var/log/nginx/error.log`: checks the Nginx error logs.
+2. `sudo less /var/log/nginx/access.log`: checks the Nginx access logs.
+3. `sudo journalctl -u nginx`: checks the Nginx process logs.
+4. `sudo journalctl -u myproject`: checks your Flask app’s uWSGI logs.
 
 
 
