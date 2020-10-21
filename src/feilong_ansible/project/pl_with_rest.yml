@@ -1,0 +1,63 @@
+---
+- name: Call the REST
+  hosts: localhost
+  gather_facts: true
+
+  tasks:
+  - name: Get the token
+    uri:
+     url: https://10.100.0.222:7443/rest/auth
+     headers: 
+      Content-Type: "application/json" 
+      X-Auth-Username: "Remote"
+      X-Auth-Password: "xxxxxxxxx"  
+     validate_certs: False
+     method: POST
+    register: ans
+   
+  - name: Host details to get WWPN
+    uri:
+      url:  https://10.100.0.222:7443/rest/lshost/1
+      headers:
+       Content-Type: "application/json"
+       X-Auth-Token: "{{ ans.json.token }}" 
+      method: POST
+      validate_certs: False
+    register: wwpn
+
+  - name: Make a volume using token
+    uri:
+      url: https://10.100.0.222:7443/rest/mkvolume
+      headers:
+       Content-Type: "application/json"
+       X-Auth-Token: "{{ ans.json.token}}"
+      method: POST
+      body:
+        size: "{{size}}"
+        unit: "gb"
+        pool: "{{pool}}"
+      body_format: json
+      validate_certs: False
+    register: vol
+  
+  - name: Map the volume to the host
+    uri:
+      url: https://10.100.0.222:7443/rest/mkvdiskhostmap/{{vol.json.id}}
+      headers:
+       Content-Type: "application/json"
+       X-Auth-Token: "{{ ans.json.token }}"
+      method: POST
+      body:
+        host: "{{host_id}}"
+      body_format: json
+      validate_certs: False
+    register: scsi
+
+  - name: Debug the variables
+    debug: 
+      msg: "<scsi_lun>{{scsi.json}}</scsi_lun>"
+
+  - name: Debug the variables
+    debug:
+      msg: "<hostdetail>{{wwpn.json}}</hostdetail>"
+
