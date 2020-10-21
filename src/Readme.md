@@ -1,11 +1,8 @@
 # Source Code Folder
-To be structured as needed by project team.
+This is the main project repository containing the file structure needed for ansible runner and flask env.
 
-Please document here
+
+
 | Subdirectory Name | Description |
 |---|---|
-| | |
-| | |
-| | |
-| | |
-| | |
+| feilong_ansible | Main Project Directory |
