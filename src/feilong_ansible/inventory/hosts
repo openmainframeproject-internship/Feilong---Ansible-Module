@@ -1,0 +1,12 @@
+[localhost]
+10.100.0.165
+[storagebox]
+10.100.0.222
+[storagebox:vars]
+ansible_connection=paramiko
+ansible_user=Remote
+ansible_password=xxxxx
+[localhost:vars]
+ansible_user=ajain
+ansible_password=xxx
+
