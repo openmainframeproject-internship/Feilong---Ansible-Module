@@ -1,6 +1,6 @@
 ansible==2.10.0
 ansible-base==2.10.2
-ansible-runner==1.4.6
+ansible-runner==2.1.1
 bcrypt==3.2.0
 cffi==1.14.3
 click==7.1.2
